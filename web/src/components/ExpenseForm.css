@@ -1,0 +1,241 @@
+.expense-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.mode-toggle button {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-toggle button:hover {
+  background: #f0f0f0;
+}
+
+.mode-toggle button.active {
+  background: #667eea;
+  color: white;
+}
+
+.voice-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.voice-instructions {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 2px dashed #667eea;
+}
+
+.voice-instructions p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.voice-instructions p:first-child {
+  font-size: 1.1rem;
+  color: #667eea;
+}
+
+.language-selector {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.language-selector label {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.95rem;
+}
+
+.language-selector select {
+  padding: 8px 12px;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.language-selector select:focus {
+  outline: none;
+  border-color: #764ba2;
+}
+
+/* Dark theme for language selector */
+.App.dark .language-selector label {
+  color: #8b9cff;
+}
+
+.App.dark .language-selector select {
+  background: #2a2a3e;
+  color: #e0e0e0;
+  border-color: #667eea;
+}
+
+.mic-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.mic-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+}
+
+.mic-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.mic-button.listening {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.voice-text {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  border: 2px solid #667eea;
+}
+
+.voice-text strong {
+  color: #667eea;
+  font-weight: 700;
+}
+
+/* Dark theme support */
+.App.dark .voice-text {
+  background: #2a2a3e;
+  color: #e0e0e0;
+  border-color: #667eea;
+}
+
+.App.dark .voice-text strong {
+  color: #8b9cff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Dark theme for labels */
+.App.dark .form-group label {
+  color: #e0e0e0;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.amount-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #667eea;
+  pointer-events: none;
+}
+
+.amount-input input {
+  padding-left: 35px !important;
+}
+
+.parsed-info {
+  background: #f0f7ff;
+  border-left: 4px solid #667eea;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 0.95rem;
+}

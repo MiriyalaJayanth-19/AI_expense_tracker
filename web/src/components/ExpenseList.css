@@ -1,0 +1,179 @@
+.expense-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.list-header h2 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Dark theme support */
+.App.dark .list-header h2 {
+  color: #ffffff;
+}
+
+.total-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #667eea;
+  opacity: 0.8;
+}
+
+.total-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.expenses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.expense-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.expense-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.expense-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.category-emoji {
+  font-size: 2rem;
+}
+
+.category-name {
+  flex: 1;
+  font-weight: 600;
+  color: #667eea;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+}
+
+.expense-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.currency-code {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #667eea;
+  opacity: 0.8;
+}
+
+.expense-description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.expense-datetime {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.expense-date {
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.expense-time {
+  color: #667eea;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.expense-relative {
+  color: #999;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-state h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 700;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+}
+
+/* Dark theme for empty state */
+.App.dark .empty-state {
+  color: #d1d5db;
+}
+
+.App.dark .empty-state h2 {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .expenses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
