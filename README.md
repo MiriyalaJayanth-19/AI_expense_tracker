@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎙️ AI Expense Tracker - Hackathon Project
 
 > **Voice-Powered Expense Management with AI Intelligence**
@@ -556,3 +557,6 @@ MIT License - See [LICENSE](LICENSE) file for details
 [Live Demo](https://aiexpensetracker.com) • [Documentation](https://docs.aiexpensetracker.com) • [Report Bug](https://github.com/yourusername/AI_expenese_Tracker/issues)
 
 </div>
+=======
+# AI_expense_tracker
+>>>>>>> 1f878bce1ae2864bde4465a4d498053000fd9d48
