@@ -10,19 +10,6 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-orange.svg)](https://www.mysql.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
----
-
-## 🏆 Hackathon Highlights
-
-### **Why This Project Stands Out:**
-
-1. **🌍 Multi-Language Voice Recognition** - Speak in 10 Indian languages
-2. **🤖 AI-Powered Smart Detection** - Auto-categorizes 100+ food items
-3. **💰 Intelligent Budget Alerts** - 90% spending notifications
-4. **🎨 Beautiful UI/UX** - Purple gradient theme with dark mode
-5. **💳 Production-Ready Payments** - Complete premium payment flow
-6. **🗄️ Enterprise Database** - MySQL with proper schema design
-7. **📊 Real-Time Analytics** - Dashboard with visual insights
 
 ---
 
@@ -456,29 +443,6 @@ realizing. We need a solution that's:
 3. **Proactive Alerts**: Warns at 90%, not just 100%
 4. **Affordable**: 10x cheaper than competitors
 5. **Beautiful UI**: Modern purple gradient design
-
----
-
-## 🚀 Future Roadmap
-
-### **Phase 1 (Next 3 Months)**
-- [ ] Receipt scanning with OCR
-- [ ] Recurring expense automation
-- [ ] Category-wise budget limits
-- [ ] Export to PDF/CSV
-
-### **Phase 2 (6 Months)**
-- [ ] Mobile app (React Native)
-- [ ] Bank account integration
-- [ ] Family expense sharing
-- [ ] AI spending insights
-
-### **Phase 3 (1 Year)**
-- [ ] Investment tracking
-- [ ] Bill payment reminders
-- [ ] Merchant partnerships
-- [ ] B2B white-label solution
-
 ---
 
 ## 📸 Screenshots
@@ -518,15 +482,6 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 ---
 
-## 👥 Team
-
-**Built with ❤️ for Hackathon 2025**
-
-- **Developer**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-
----
 
 ## 🙏 Acknowledgments
 
@@ -552,7 +507,6 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 ### ⭐ Star this repo if you found it helpful!
 
-**Made with 💜 for the Hackathon**
 
 [Live Demo](https://aiexpensetracker.com) • [Documentation](https://docs.aiexpensetracker.com) • [Report Bug](https://github.com/yourusername/AI_expenese_Tracker/issues)
 
